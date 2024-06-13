@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "a46f29f4-d37d-4d9e-b79a-f26898f20df5",
+		"name": "go-planets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13129569"
+	},
+	"item": [
+		{
+			"name": "getPlanets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlanetByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/planets",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPlanet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":              \"Mercury\",\r\n\t\"Description\":       \"Closest to Sun\",\r\n\t\"DisatnceFromEarth\": 299792458,\r\n\t\"Radius\":            300,\r\n\t\"Mass\":              300000,\r\n\t\"IsTerrestrial\":     true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/planet",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePlanet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":              \"Shani\",\r\n\t\"Description\":       \"twin\",\r\n\t\"DisatnceFromEarth\": 299792458,\r\n\t\"Radius\":            300,\r\n\t\"Mass\":              300000,\r\n\t\"IsTerrestrial\":     false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/planet/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePlanet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/planet/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"planet",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EstimateFuelConsumption",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"crew_cap\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/fuelestimate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"fuelestimate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
